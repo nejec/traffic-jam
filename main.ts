@@ -828,7 +828,7 @@ let Driver: Sprite = null
 let Level = 0
 let H_list: Sprite[] = []
 let V_list: Sprite[] = []
-game.showLongText("This game is based on the classic game rush hour, but the twist is that all cars move with the same buttons! Good luck - you're going to need it!", DialogLayout.Full)
+game.showLongText("hgghhg", DialogLayout.Full)
 Colors2()
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level_0`)
