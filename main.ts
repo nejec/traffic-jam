@@ -545,22 +545,38 @@ controller.down.onEvent(ControllerButtonEvent.Released, function () {
 function Go_to_level (extra: boolean) {
     if (Level == 1) {
         Level1()
+        game.splash("Let the fun begin")
+        game.splash("Juhu! Uspelo ti je!")
+        game.splash("Dosegla si 6. stopnjo")
+        game.splash("Od 10ih")
     } else if (Level == 2) {
         Level2()
+        game.splash("Easy. Kaj pa ta?")
     } else if (Level == 3) {
         Level3()
+        game.splash("Meh. Mogoce ta?")
     } else if (Level == 4) {
         Level4()
+        game.splash("Ok. Zdej pa zares.")
     } else if (Level == 5) {
         Level5()
+        game.splash("Annoyed?")
     } else if (Level == 6) {
         Level6()
+        game.splash("Juhu! Uspelo ti je!")
+        game.splash("Dosegla si 6. stopnjo!")
+        game.splash("... od desetih.")
     } else if (Level == 7) {
         Level7()
+        game.splash("Ti je ze vsec ratalo?")
+        game.splash("Ne?")
+        game.splash("Smola")
     } else if (Level == 8) {
         Level8()
+        game.splash("Level 1" + convertToText(Level))
     } else if (Level == 9) {
         Level9()
+        game.splash("Level 1" + convertToText(Level))
     } else if (extra) {
         for (let value of V_list) {
             value.setFlag(SpriteFlag.Invisible, true)
@@ -589,9 +605,9 @@ function Go_to_level (extra: boolean) {
         game.showLongText("Invalid Level :(", DialogLayout.Full)
         game.reset()
     }
-    if (Level < 10) {
-        game.splash("Level 1" + convertToText(Level))
-    }
+//    if (Level < 10) {
+//        game.splash("Level 1" + convertToText(Level))
+//    }
 }
 function MoveH (direction: number) {
     for (let H_sprite of H_list) {
@@ -828,7 +844,7 @@ let Driver: Sprite = null
 let Level = 0
 let H_list: Sprite[] = []
 let V_list: Sprite[] = []
-game.showLongText("hgghhg", DialogLayout.Full)
+game.showLongText("Dobrodosla v svet videoigric! Pravila so enostavna: odpeljat avto s parkirisca. Ce se ti ustavi, lahko najdes resitev na githubu ;)", DialogLayout.Full)
 Colors2()
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level_0`)
