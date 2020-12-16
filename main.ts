@@ -546,9 +546,6 @@ function Go_to_level (extra: boolean) {
     if (Level == 1) {
         Level1()
         game.splash("Let the fun begin")
-        game.splash("Juhu! Uspelo ti je!")
-        game.splash("Dosegla si 6. stopnjo")
-        game.splash("Od 10ih")
     } else if (Level == 2) {
         Level2()
         game.splash("Easy. Kaj pa ta?")
@@ -573,10 +570,10 @@ function Go_to_level (extra: boolean) {
         game.splash("Smola")
     } else if (Level == 8) {
         Level8()
-        game.splash("Level 1" + convertToText(Level))
+        game.splash("Sej zdej si pa ze blizu.")
     } else if (Level == 9) {
         Level9()
-        game.splash("Level 1" + convertToText(Level))
+        game.splash("Ok. Ta je pa zadnja.")
     } else if (extra) {
         for (let value of V_list) {
             value.setFlag(SpriteFlag.Invisible, true)
@@ -866,6 +863,8 @@ game.onUpdate(function () {
         if (Level < 9) {
             Level += 1
         } else {
+            game.showLongText("Super! Nobenega parkirisca vec! Sedaj pa ...", DialogLayout.Full)
+            game.showLongText("Uganka: katero je najmanjše število ki se poveča za 12, ko ga obrnemo na glavo? To stevilo odpre eno od kljucavnic.", DialogLayout.Full)
             game.over(true)
         }
         Go_to_level(false)
