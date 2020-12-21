@@ -841,7 +841,7 @@ let Driver: Sprite = null
 let Level = 0
 let H_list: Sprite[] = []
 let V_list: Sprite[] = []
-game.showLongText("Dobrodosla v svet videoigric! Pravila so enostavna: odpeljat avto s parkirisca. Ce se ti ustavi, lahko najdes resitev na githubu ;)", DialogLayout.Full)
+game.showLongText("Dobrodosla v svet videoigric! Pravila so enostavna: odpeljat avto s parkirisca. Ce se ti ustavi, lahko najdes resitev na githubu ;) Verjetno bo tudi na racunalniku lazje igrat...", DialogLayout.Full)
 Colors2()
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level_0`)
