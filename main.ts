@@ -545,10 +545,10 @@ controller.down.onEvent(ControllerButtonEvent.Released, function () {
 function Go_to_level (extra: boolean) {
     if (Level == 1) {
         Level1()
-        game.splash("Let the fun begin")
+        game.splash("Naj se zabava zacne ;)")
     } else if (Level == 2) {
         Level2()
-        game.splash("Easy. Kaj pa ta?")
+        game.splash("Enostavno, ne? Kaj pa ta?")
     } else if (Level == 3) {
         Level3()
         game.splash("Meh. Mogoce ta?")
@@ -557,7 +557,7 @@ function Go_to_level (extra: boolean) {
         game.splash("Ok. Zdej pa zares.")
     } else if (Level == 5) {
         Level5()
-        game.splash("Annoyed?")
+        game.splash("Ti ze gre na zivce?")
     } else if (Level == 6) {
         Level6()
         game.splash("Juhu! Uspelo ti je!")
